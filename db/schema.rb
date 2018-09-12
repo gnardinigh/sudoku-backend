@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_12_174147) do
+ActiveRecord::Schema.define(version: 2018_09_12_210224) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2018_09_12_174147) do
   create_table "puzzles", force: :cascade do |t|
     t.string "difficulty"
     t.string "numbers"
+    t.string "start"
   end
 
   create_table "scores", force: :cascade do |t|
