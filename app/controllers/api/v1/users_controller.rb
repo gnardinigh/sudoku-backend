@@ -1,26 +1,26 @@
-class Api::V1::NotesController < ApplicationController
+class Api::V1::UsersController < ApplicationController
     before_action :find_note, only: [:update]
     def index
-      @notes = Note.all
-      render json: @notes
+      @users = User.all
+      render json: @users
     end
-  
+
     def update
-      @note.update(note_params)
-      if @note.save
-        render json: @note, status: :accepted
+      @user.update(user_params)
+      if @user.save
+        render json: @user, status: :accepted
       else
-        render json: { errors: @note.errors.full_messages }, status: :unprocessible_entity
+        render json: { errors: @user.errors.full_messages }, status: :unprocessible_entity
       end
     end
-  
+
     private
-  
-    def note_params
+
+    def user_params
       params.permit(:title, :content)
     end
-  
-    def find_note
-      @note = Note.find(params[:id])
+
+    def find_user
+      @user = User.find(params[:id])
     end
   end
