@@ -22,7 +22,7 @@ class Api::V1::PuzzlesController < ApplicationController
     private
 
     def puzzle_params
-      params.permit(:title, :content)
+      params.permit(:difficulty, :numbers, :start)
     end
 
     def find_puzzle
