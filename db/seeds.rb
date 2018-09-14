@@ -52,7 +52,7 @@ easy_boards = easy_solutions.map(&:clone)
 medium_boards = medium_solutions.map(&:clone)
 hard_boards = hard_solutions.map(&:clone)
 
-easy_boards.each do |string| 
+easy_boards.each do |string|
     25.times do
         done_status = false
         unless done_status
@@ -65,7 +65,7 @@ easy_boards.each do |string|
     end
 end
 
-medium_boards.each do |string| 
+medium_boards.each do |string|
     35.times do
         done_status = false
         unless done_status
@@ -78,7 +78,7 @@ medium_boards.each do |string|
     end
 end
 
-hard_boards.each do |string| 
+hard_boards.each do |string|
     45.times do
         done_status = false
         unless done_status
@@ -103,10 +103,3 @@ end
 for i in (0..9)
     Puzzle.create(difficulty:'hard',numbers:hard_solutions[i],start:hard_boards[i])
 end
-
-
-
-
-
-
-
