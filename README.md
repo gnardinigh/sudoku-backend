@@ -24,9 +24,20 @@ $ rake db:migrate
 $ rake db:seed
 $ rails s
 
+front end:
+copy the absolute path of index.html into your browser
+
 ## Built With
 
 * [JavaScript ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - frontend language
 * [Ruby on Rails](https://guides.rubyonrails.org/) - backend API
 * [PostgreSQL](https://www.postgresql.org/docs/) - databases
+
+## Screen Caps:
+### Click an empty square to open the number input field.
+![entry](./readmeimgs/sud1.png)
+### Checking will change color to red if submission is wrong...
+![check wrong](./readmeimgs/sud2.png)
+### ...and green if submission is right!
+![check right](./readmeimgs/sud3.png)
 
